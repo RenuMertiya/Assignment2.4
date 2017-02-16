@@ -1,0 +1,66 @@
+Apache Hadoop is an open-source software framework written in Java. It is primarily used for storage and processing of large sets of data
+,better known as big data. It comprises of several components that allow the storage and processing of large data volumes in a clustered
+environment. 
+The two main components are Hadoop Distributed File System and MapReduce programming.
+
+1. Components of Apache Hadoop:
+
+Hadoop, as a whole, consists of the following parts:
+Hadoop Distributed File System – Abbreviated as HDFS, it is primarily a file system similar to many of the already existing ones. However
+, it is also a virtual file system.
+There is one notable difference with other popular file systems, which is, when we move a file in HDFS, it is automatically split into 
+smaller files. These smaller files are then replicated on a minimum of three different servers, so that they can be used as an 
+alternative to unforeseen circumstances. This replication count isn’t necessarily hard-set, and can be decided upon as per requirements.
+Hadoop MapReduce – MapReduce is mainly the programming aspect of Hadoop that allows processing of large volumes of data.
+There is also a provision that breaks down requests into smaller requests, which are then sent to multiple servers. This allows
+utilization of the scalable power of the CPU.
+HBASE – HBASE happens to be a layer that sits atop the HDFS and has been developed by means of the Java programming language. HBASE
+primarily has the following aspects –
+•	Non relational
+•	Highly scalable
+•	Fault tolerance
+Every single row that exists in HBASE is identified by means of a key. The number of columns is also not defined, but rather grouped into
+column families.
+Zookeeper – This is basically a centralized system that maintains –
+•	Configuration information
+•	Naming information
+•	Synchronization information
+Besides these, Zookeeper is also responsible for group services and is utilized by HBASE. It also comes to use for MapReduce programs.
+Solr/Lucene – This is nothing but a search engine. Its libraries are developed by Apache and required over 10 years to be developed in 
+its present robust form.
+Programming Languages – There are basically two programming languages that are identified as original Hadoop programming languages,
+•	Hive
+•	PIG
+Besides these, there are a few other programming languages that can be used for writing programs, namely C, JAQL and Java. We can also 
+make direct usage of SQL for interaction with the database, although that requires the use of standard JDBC or ODBC drivers.
+2. Systems for integrated Hadoop operations
+Most enterprise vendors have their very own Hadoop products that comprise of database as well as analytical offerings. These offerings
+also do not require you to source Hadoop from elsewhere, but rather provide it as a core aspect of their solutions.
+Some of these are –
+EMC Greenplum
+Greenplum happens to be a pretty new entrant in the enterprise business and has a reputation for being a strong provider of analytics. 
+It comes as a Unified Analytics Platform, which consists of –
+•	Greenplum database – meant for use on structured data
+•	Greenplum HD – Its Hadoop distribution
+•	Chorus – A productivity layer for Data Science teams.
+IBM:
+It implements an array of features for Hadoop, such as –
+•	Tools for management
+•	Tools for administration
+•	It also comprises of a textual data analysis tools that help in the resolution of entities, such as identifying people, phone numbers, addresses and more.
+By making use of the JAQL query language, one can integrate Hadoop with various IBM products like DB2, or even Netezza. BigSheets, a 
+spreadsheet like application working on big data is also offered. At present, BigInsights can only be used over cloud by means of Amazon, Rackspace, Rightscale, etc.
+Microsoft:
+
+Hadoop forms the core part of Microsoft’s big data offering. Pursuing an integrated approach, it plans to make available big data over 
+its tool suite for analytics.
+Microsoft Big Data Solutions have been brought into the Windows Server platform and also to the Windows Azure platform, which is cloud-
+based. Integrated with Windows Systems Center and Active Directory, the company has its own distribution format of Hadoop. Further, it 
+integrates Hadoop with its SQL Server, Visual Studio, and .NET.
+Oracle:
+
+Oracle entered into the world of big data with an appliance based approach in the form of Big Data Appliance. This ensures easy Hadoop 
+integration, and comes along with the new NoSQL database, which allows for analytics and also has connections to Oracle databases and 
+the Exadata warehousing lineup. NoSQL is also known as a scalable key value-based database offering.
+Oracle also happens to have the R analytical platform integrated with Hadoop, and that makes it easy to ship. Oracle’s R Enterprise
+product is also one that allows easy database integration, and also with Hadoop.
